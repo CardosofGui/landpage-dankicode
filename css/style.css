@@ -1,0 +1,260 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+html, body{
+  height: 100%;
+}
+
+@font-face{
+  src: url(../fonts/OpenSans-Light.ttf);
+  font-family: "Open Sans";
+}
+.center{
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.clear{
+  clear: both;
+}
+
+header{
+  background-color: #212343;
+  width: 100%;
+  padding: 0 2%;
+  height: 70px;
+}
+
+header img{
+  margin: 20px;
+}
+
+#container-box{
+  background-image: url(../img/header_bg.png);
+  width: 100%;
+  padding: 0 2%;
+  height: 557px;
+  background-size: cover;
+  background-position: center;
+}
+
+#container-box .center{
+  height: 100%;
+  width: 100%;
+  padding: 0 2%;
+}
+
+#form{
+  background-color: white;
+  width: 400px;
+  height: calc(100% + 30px);
+  float: right;
+  padding: 10px;
+  position: relative;
+  top: -15px;
+  border: 8px solid rgb(204, 204, 204);
+}
+
+#form h2{
+  font-size: 21px;
+  font-weight: normal;
+  color: #999999;
+}
+
+.input-container span, #form span{
+  display: inline-block;
+  width: 100%;
+  font-size: 17px;
+  color: #bbb;
+}
+.input-container:first-of-type span{
+  margin-top: 20px;
+}
+
+.input-container input[type="text"]{
+  width: 344px;
+  height: 55px;
+  border: 1px solid #ccc;
+  outline: 0;
+  padding: 10px;
+  line-height: 1px;
+  font-size: 18px;
+  margin: 15px 0;
+}
+.input-container:nth-of-type(3) input[type="text"]{
+  margin-bottom: 0px;
+}
+
+#form > span{
+  margin: 30px 0;
+}
+
+.input-container-button{
+  text-align: center;
+}
+.input-container-button input[type="button"]{ 
+  width: 280px;
+  height: 56px;
+  border: 0;
+  background-color: #363A6D;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  outline: 0;
+}
+
+#info{
+  margin-top: 120px;
+  float: left;
+  width: 519px;
+  height: 270px;
+  background-color:rgba(33,35,67,0.7);
+  list-style-position: inside;
+}
+#info ul{
+  padding: 30px;
+}
+#info li{
+  margin: 20px 0;
+  color: white;
+}
+
+#section-info{
+  padding: 40px 2%;
+  width: 100%;
+  background-color: #DDDDDD;
+  text-align: center;
+}
+#section-info h2{
+  font-weight: normal;
+}
+#section-info p{
+  width: 80%;
+  display: inline-block;
+  text-align: justify;
+  margin: 15px 0;
+}
+
+#arrow{
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/arrow.png);
+  background-size: 100% 100%;
+  position: relative;
+  bottom: 15px;
+  left: 50%;
+  margin-left: -20px;
+}
+
+#section-habilidades{
+  width: 100%;
+  text-align: center;
+  padding: 40px 2%;
+  color: #462663;
+}
+#section-habilidades > h2{
+  margin-bottom: 40px;
+  font-weight: normal;
+}
+.habilidade{
+  display: inline-block;
+  width: 33.33333%;
+  margin-left: -4px;
+  padding: 10px 35px;
+}
+.habilidade img{
+  width: 70px;
+}
+.habilidade-titulo h2{
+  color: #462663;
+  margin: 8px 0;
+  font-weight: normal;
+}
+.habilidade-texto{
+  text-align: justify;
+  color: black;
+}
+
+#footer{
+  width: 100%;
+  padding: 20px 2%;
+  border-top: 2px solid #888888;
+  text-align: center;
+}
+#footer p{
+  color: #888888;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1024px){
+  header{
+    background-color: #212343;
+    width: 100%;
+    padding: 20px 2%;
+    text-align: center;
+    height: auto;
+  }
+  header img{
+    margin: 0;
+  }
+  #container-box{
+    background-image: url(../img/header_bg.png);
+    width: 100%;
+    padding: 40px 2%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+  }
+  #form{
+    max-width: 400px;
+    padding: 10px;
+    width: 48%;
+    height: 100%;
+    float: right;
+    margin-top: 0px;
+    top: 0;
+  }
+  #info{
+    float: left;
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+    list-style-position: inside;
+    margin-top: 120px;
+  }
+  .input-container-button input[type="button"]{
+    max-width: 280px;
+    height: 56px;
+    width: 100%;
+  }
+  .input-container input[type="text"]{
+    width: 100%;
+    height: 55px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  #info{
+    margin-top: 0;
+    float: none;
+    display: inline-block;
+    width: 100%;
+  }
+  #form{
+    float: none;
+    display: inline-block;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .habilidade{
+    float: none;
+    display: inline-block;
+    width: 80%;
+    max-width: 500px;
+    padding: 30px 0;
+  }
+}
